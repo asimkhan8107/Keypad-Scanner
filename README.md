@@ -21,7 +21,8 @@ The keypad is wired in matrix form with a switch at the intersection of each row
                                           
 which corresponds to the key number. 
 
-For **example**, pressing key 5 must output 0101,
+For **example**, 
+                 pressing key 5 must output 0101,
 
                  pressing the * key must output 1010, and
                  
