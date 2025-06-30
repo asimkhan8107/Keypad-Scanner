@@ -57,3 +57,12 @@ will have an active signal.
 
 
 
+# Design Modules
+
+We will divide the design into several modules, as shown in Figure 4-43.
+
+
+The first part of the design will be a scanner that scans the rows and columns of the keypad. The keyscan module generates the column signals to scan the keyboard. 
+
+
+The debounce module generates a signal **K** when a key has been pressed and a signal **Kd** after it has been debounced. When a valid key is detected, the decoder determines the key number from the row and column numbers.
