@@ -32,3 +32,6 @@ For **example**,
 When a valid key has been detected, the scanner should output a signal **V** for one clock time. 
 
 Assume that only one key is pressed at a time. The design must include hardware to protect the circuitry from malfunction due to keypad bounces. 
+
+
+# Block Diagram
