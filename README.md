@@ -40,3 +40,17 @@ Assume that only one key is pressed at a time. The design must include hardware 
 - **Keypad:** 4 rows (R0 - R3) and 3 columns (C0 - C2), making 12 buttons (3x4).
 - **Microcontroller/Circuit block:** This is labeled as "Keypad scanner, debouncer, & decoder".
 - **Resistors:** Connected to ground.
+
+
+
+
+The overall block diagram of the circuit is presented in Figure 4-42. 
+
+The keypad contains resistors that are connected to ground. When a switch is pressed, a path is established from the corresponding column line to the ground. If a voltage can be applied on 
+
+                                          the column lines : C0, C1, and C2.
+                                          
+Then the voltage can be obtained on the row line corresponding to the key that is pressed. One among 
+
+                                          the rows : R0, R1, R2, or R3
+will have an active signal.
