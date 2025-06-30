@@ -36,7 +36,7 @@ Assume that only one key is pressed at a time. The design must include hardware 
 
 # Block Diagram
 
-Component Involved: 
-- Keypad: 4 rows (R0 - R3) and 3 columns (C0 - C2), making 12 buttons (3x4).
-- Microcontroller/Circuit block: This is labeled as "Keypad scanner, debouncer, & decoder".
-- Resistors: Connected to ground.
+**Component Involved:** 
+- **Keypad:** 4 rows (R0 - R3) and 3 columns (C0 - C2), making 12 buttons (3x4).
+- **Microcontroller/Circuit block:** This is labeled as "Keypad scanner, debouncer, & decoder".
+- **Resistors:** Connected to ground.
