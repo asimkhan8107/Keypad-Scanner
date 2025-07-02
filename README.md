@@ -106,3 +106,20 @@ The remaining rows have don’t care outputs since we have assumed that only one
 
 Since the decoder is a combinational circuit, its output will change as the keypad is scanned. At the time a valid key is detected (K 5 1 and V 5 1), 
 its output will have the correct value and this value can be saved in a register at the same time the circuit goes to S5.
+
+**4) Controller** <br>
+Figure 4-45 shows the state diagram of the controller for the keypad scanner. 
+It waits in S1 with 
+
+                outputs : C0 5 C1 5 C2 5 1   
+
+until a key is pressed. 
+In S2,   
+
+                          C0 5 1, so
+                          
+if the key that was pressed is in column 0, K 5 1 and the circuit outputs a valid signal and goes to S5. Signal K is used instead of Kd, since the key press is already debounced. 
+
+If no key press is found in column 0, column 1 is checked in S3, and if necessary, column 2 is checked in S4. 
+
+In S5, the circuit waits until all keys are released and **Kd** goes to 0 before resetting.
