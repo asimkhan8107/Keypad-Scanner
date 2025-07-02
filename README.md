@@ -97,3 +97,12 @@ synchronizing circuit.
 
 The four row signals are connected to an OR gate to form signal **K**, which turns on when a key is pressed and a column scan signal is applied. 
 The debounced signal **Kd** will be fed to the sequential circuit.
+
+
+
+**Decoder** <br>
+The decoder determines the key number from the row and column numbers using the truth table given in Table 4-4. The truth table has one row for each of the 12 keys. 
+The remaining rows have don’t care outputs since we have assumed that only one key is pressed at a time. 
+
+Since the decoder is a combinational circuit, its output will change as the keypad is scanned. At the time a valid key is detected (K 5 1 and V 5 1), 
+its output will have the correct value and this value can be saved in a register at the same time the circuit goes to S5.
