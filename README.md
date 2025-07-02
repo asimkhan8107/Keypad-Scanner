@@ -66,3 +66,25 @@ The first part of the design will be a scanner that scans the rows and columns o
 
 
 The debounce module generates a signal **K** when a key has been pressed and a signal **Kd** after it has been debounced. When a valid key is detected, the decoder determines the key number from the row and column numbers.
+
+
+**Scanner**
+We will use the following procedure to scan the keyboard: First apply logic 1s 
+  
+                    to columns : C0, C1, and C2.
+
+and wait. 
+If any key is pressed, a 1 will appear 
+
+                    on rows : R0, R1, R2, or R3.
+                    
+Then apply a 1 to column C0 only. If any of the Ris is 1, a valid key is detected. 
+
+If R0 is received, one knows that switch 1 was pressed. 
+If R1, R2, or R3 is received => it indicates switch 4, 7, or * was pressed. 
+If so, set V 5 1 and output the corresponding N. 
+If no key is detected in the first column, apply a 1 to C1 and repeat. 
+If no key is detected in the second column, repeat for C2. 
+
+When a valid key is detected, apply 1s to C0, C1, and C2 and wait until no key is pressed. This last step is necessary so 
+that only one valid signal is generated each time a key is pressed.
