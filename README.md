@@ -81,10 +81,10 @@ If any key is pressed, a 1 will appear
 Then apply a 1 to column C0 only. If any of the Ris is 1, a valid key is detected. 
 
 If R0 is received, one knows that switch 1 was pressed.  <br>
-If R1, R2, or R3 is received => it indicates switch 4, 7, or * was pressed. 
-If so, set V 5 1 and output the corresponding N. 
-If no key is detected in the first column, apply a 1 to C1 and repeat. 
-If no key is detected in the second column, repeat for C2. 
+If R1, R2, or R3 is received => it indicates switch 4, 7, or * was pressed. <br>
+If so, set V 5 1 and output the corresponding N. <br>
+If no key is detected in the first column, apply a 1 to C1 and repeat. <br> 
+If no key is detected in the second column, repeat for C2. <br>
 
 When a valid key is detected, apply 1s to C0, C1, and C2 and wait until no key is pressed. This last step is necessary so 
 that only one valid signal is generated each time a key is pressed.
