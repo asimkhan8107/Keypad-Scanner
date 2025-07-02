@@ -80,7 +80,7 @@ If any key is pressed, a 1 will appear
                     
 Then apply a 1 to column C0 only. If any of the Ris is 1, a valid key is detected. 
 
-If R0 is received, one knows that switch 1 was pressed. 
+If R0 is received, one knows that switch 1 was pressed.  <br>
 If R1, R2, or R3 is received => it indicates switch 4, 7, or * was pressed. 
 If so, set V 5 1 and output the corresponding N. 
 If no key is detected in the first column, apply a 1 to C1 and repeat. 
