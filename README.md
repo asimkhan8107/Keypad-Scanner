@@ -68,7 +68,7 @@ The first part of the design will be a scanner that scans the rows and columns o
 The debounce module generates a signal **K** when a key has been pressed and a signal **Kd** after it has been debounced. When a valid key is detected, the decoder determines the key number from the row and column numbers.
 
 
-**Scanner** <br>
+**1) Scanner** <br>
 We will use the following procedure to scan the keyboard: First apply logic 1s 
   
                     to columns : C0, C1, and C2.
@@ -91,7 +91,7 @@ that only one valid signal is generated each time a key is pressed.
 
 
 
-**Debouncer** <br>
+**2) Debouncer** <br>
 As discussed in the scoreboard example, we need to debounce the keys to avoid malfunctions due to switch bounce. Figure 4-44 shows a proposed debouncing and 
 synchronizing circuit. 
 
@@ -100,7 +100,7 @@ The debounced signal **Kd** will be fed to the sequential circuit.
 
 
 
-**Decoder** <br>
+**3) Decoder** <br>
 The decoder determines the key number from the row and column numbers using the truth table given in Table 4-4. The truth table has one row for each of the 12 keys. 
 The remaining rows have don’t care outputs since we have assumed that only one key is pressed at a time. 
 
